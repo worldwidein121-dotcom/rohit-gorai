@@ -9,169 +9,72 @@
 
 <style>
 *{box-sizing:border-box}
-
 html{scroll-behavior:smooth}
-
 body{
- margin:0;
- background:#eef3ff;
- color:#172554;
- font-family:Arial,sans-serif;
- overflow-x:hidden;
+ margin:0;background:#eef3ff;color:#172554;
+ font-family:Arial,sans-serif;overflow-x:hidden;
 }
-
 header{
  background:linear-gradient(135deg,#102b65,#3285ee);
- color:white;
- text-align:center;
- padding:42px 15px;
+ color:white;text-align:center;padding:42px 15px;
 }
-
 header h1{font-size:32px;margin:10px}
-
 nav{
- background:#102b65;
- padding:14px 8px;
- display:flex;
- justify-content:center;
- flex-wrap:wrap;
- gap:15px;
+ background:#102b65;padding:14px 8px;
+ display:flex;justify-content:center;flex-wrap:wrap;gap:15px;
 }
-
-nav a{
- color:white;
- text-decoration:none;
- font-weight:bold;
- font-size:14px;
-}
-
-.container{
- width:100%;
- max-width:750px;
- margin:auto;
- padding:12px;
-}
-
+nav a{color:white;text-decoration:none;font-weight:bold;font-size:14px}
+.container{width:100%;max-width:750px;margin:auto;padding:12px}
 .card{
- background:white;
- padding:22px;
- margin:17px 0;
- border-radius:16px;
- box-shadow:0 4px 15px #0001;
+ background:white;padding:22px;margin:17px 0;
+ border-radius:16px;box-shadow:0 4px 15px #0001;
 }
-
 h2{color:#1760b5}
-
 .count{
- font-size:22px;
- font-weight:bold;
- color:#1760b5;
- text-align:center;
- margin:20px 0;
+ font-size:22px;font-weight:bold;color:#1760b5;
+ text-align:center;margin:20px 0;
 }
-
 .btn{
- display:inline-block;
- background:#1760b5;
- color:white;
- padding:12px 17px;
- border:0;
- border-radius:9px;
- text-decoration:none;
- margin:6px 3px;
- cursor:pointer;
+ display:inline-block;background:#1760b5;color:white;
+ padding:12px 17px;border:0;border-radius:9px;
+ text-decoration:none;margin:6px 3px;cursor:pointer;
 }
-
 .app-grid{
- display:grid;
- grid-template-columns:repeat(2,minmax(0,1fr));
- gap:13px;
- margin-top:18px;
+ display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:13px;margin-top:18px;
 }
-
 .app-btn{
- display:flex;
- justify-content:center;
- align-items:center;
- min-height:65px;
- background:#1760b5;
- color:white;
- text-decoration:none;
- border-radius:12px;
- padding:12px 5px;
- font-weight:bold;
- font-size:15px;
- text-align:center;
+ display:flex;justify-content:center;align-items:center;
+ min-height:65px;background:#1760b5;color:white;
+ text-decoration:none;border-radius:12px;padding:12px 5px;
+ font-weight:bold;font-size:15px;text-align:center;
  box-shadow:0 4px 10px #0002;
 }
-
 .app-btn:active{transform:scale(.96)}
-
 .whatsapp-app{background:#25D366}
-
 .exam{
- background:#eef4ff;
- padding:13px;
- border-radius:10px;
- margin:10px 0;
+ background:#eef4ff;padding:13px;border-radius:10px;margin:10px 0;
 }
-
-.small{
- font-size:13px;
- color:#64748b;
-}
-
-/* BIRTHDAY DESIGN */
+.small{font-size:13px;color:#64748b}
 .birthday-box{
- text-align:center;
- padding:15px 5px;
- border-radius:14px;
+ text-align:center;padding:15px 5px;border-radius:14px;
  background:linear-gradient(135deg,#fff0f6,#f1e8ff);
 }
-
-.birthday-box h2{color:#a52c91}
-
-.birthday-icon{
- font-size:55px;
- margin:15px;
-}
-
-.birthday-wish{
- color:#ad238c;
- font-size:22px;
- font-weight:bold;
-}
-
-.birthday-message{
- color:#59436c;
- line-height:1.7;
-}
-
+.birthday-icon{font-size:55px;margin:15px}
+.birthday-wish{color:#ad238c;font-size:22px;font-weight:bold}
+.birthday-message{color:#59436c;line-height:1.7}
 .confetti{
- position:fixed;
- top:-20px;
- z-index:9999;
- pointer-events:none;
+ position:fixed;top:-20px;z-index:9999;pointer-events:none;
  animation:fall 5s linear forwards;
 }
-
 @keyframes fall{
- to{
-  transform:translateY(110vh) rotate(720deg);
-  opacity:0;
- }
+ to{transform:translateY(110vh) rotate(720deg);opacity:0}
 }
-
 footer{
- background:#102b65;
- color:white;
- text-align:center;
- padding:25px 15px;
- margin-top:20px;
+ background:#102b65;color:white;text-align:center;
+ padding:25px 15px;margin-top:20px;
 }
-
 footer p{margin:9px 0}
-
 @media(max-width:480px){
  header h1{font-size:27px}
  .card{padding:18px}
@@ -218,19 +121,17 @@ My goal is to learn, grow and achieve success.
 
 <div class="app-grid">
 
-<a class="app-btn" href="https://www.google.com" target="_blank" rel="noopener noreferrer">🔍 Google</a>
+<a class="app-btn" href="https://www.google.com" target="_blank">🔍 Google</a>
+<a class="app-btn" href="https://www.youtube.com" target="_blank">▶️ YouTube</a>
+<a class="app-btn" href="https://chatgpt.com" target="_blank">🤖 ChatGPT</a>
+<a class="app-btn" href="https://gemini.google.com" target="_blank">✨ Gemini</a>
+<a class="app-btn" href="https://www.facebook.com" target="_blank">📘 Facebook</a>
+<a class="app-btn" href="https://www.instagram.com" target="_blank">📸 Instagram</a>
 
-<a class="app-btn" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">▶️ YouTube</a>
-
-<a class="app-btn" href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">🤖 ChatGPT</a>
-
-<a class="app-btn" href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">✨ Gemini</a>
-
-<a class="app-btn" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
-
-<a class="app-btn" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
-
-<a class="app-btn whatsapp-app" href="https://wa.me/916294181539" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+<a class="app-btn whatsapp-app"
+href="https://wa.me/916294181539" target="_blank">
+💬 WhatsApp
+</a>
 
 </div>
 </section>
@@ -253,9 +154,12 @@ My goal is to learn, grow and achieve success.
 <p>2, 3, 4, 5, 6 & 7 April 2027</p>
 </div>
 
-<a class="btn" href="https://jeemain.nta.nic.in/" target="_blank" rel="noopener noreferrer">🌐 Open NTA Official Website</a>
-
-<a class="btn" href="https://nta.ac.in/" target="_blank" rel="noopener noreferrer">NTA Main Website</a>
+<a class="btn" href="https://jeemain.nta.nic.in/" target="_blank">
+🌐 Open NTA Official Website
+</a>
+<a class="btn" href="https://nta.ac.in/" target="_blank">
+NTA Main Website
+</a>
 
 <p class="small">Verify exam dates with official NTA notices.</p>
 </section>
@@ -264,120 +168,98 @@ My goal is to learn, grow and achieve success.
 <section class="card">
 <h2>🔔 JEE Exam Reminder</h2>
 <p>Download the exam dates for your phone calendar.</p>
-
 <button class="btn" onclick="downloadReminder()">
 📥 Download All Exam Reminders
 </button>
-
 <p class="small">
 Import the calendar file into your phone calendar.
-Notifications depend on your calendar app settings.
 </p>
 </section>
 
-<!-- AUTOMATIC BIRTHDAY -->
+<!-- BIRTHDAY -->
 <section class="card" id="birthday">
-
 <div class="birthday-box">
-
 <div class="birthday-icon">🎂</div>
-
 <h2>Birthday Celebration</h2>
-
 <h3>Rohit Gorai</h3>
-
 <p>Birthday: 25 April</p>
-
-<div class="count" id="birthdayCount">
-Loading...
-</div>
-
+<div class="count" id="birthdayCount">Loading...</div>
 <div class="birthday-wish" id="birthdayWish"></div>
-
 <div class="birthday-message" id="birthdayMessage"></div>
-
 <div id="birthdayAnimation"></div>
-
 </div>
 </section>
 
 <!-- CONTACT -->
 <section class="card" id="contact">
-
 <h2>📞 Contact Rohit</h2>
 
 <h3>📧 Email</h3>
-
 <p>rohitgorai6294@gmail.com</p>
-
 <a class="btn" href="mailto:rohitgorai6294@gmail.com">Email 1</a>
 
 <p>rohitgorai889@gmail.com</p>
-
 <a class="btn" href="mailto:rohitgorai889@gmail.com">Email 2</a>
 
+<h3>📱 Phone Number</h3>
+<p>+91 6294181539</p>
+
+<a class="btn" href="tel:+916294181539">
+📞 Call Now
+</a>
+
+<a class="btn" href="sms:+916294181539">
+✉️ Send SMS
+</a>
+
 <h3>💬 WhatsApp</h3>
+<p>+91 6294181539</p>
 
-<p>6294181539</p>
+<a class="btn" style="background:#25D366"
+href="https://wa.me/916294181539" target="_blank">
+💬 Chat on WhatsApp
+</a>
 
-<a class="btn" href="https://wa.me/916294181539" target="_blank" rel="noopener noreferrer">
-Chat on WhatsApp
+<a class="btn" style="background:#128C7E"
+href="https://wa.me/916294181539?text=Hello%20Rohit%2C%20I%20visited%20your%20website."
+target="_blank">
+📨 Send WhatsApp Message
 </a>
 
 <h3>✈️ Telegram</h3>
-
-<a class="btn" href="https://t.me/ROHIT_TELEGRAM_USERNAME" target="_blank" rel="noopener noreferrer">
+<a class="btn"
+href="https://t.me/ROHIT_TELEGRAM_USERNAME" target="_blank">
 Open Telegram
 </a>
 
 <p class="small">
 Replace ROHIT_TELEGRAM_USERNAME with your actual Telegram username.
 </p>
-
 </section>
 
 </main>
 
 <!-- FOOTER -->
 <footer>
-
 <h3>Rohit Gorai</h3>
-
 <p>My Personal Website</p>
-
 <p>© 2026 Rohit Gorai. All Rights Reserved.</p>
-
 <p>Designed with ❤️ by Rohit Gorai</p>
-
 </footer>
 
 <script>
 
 // JEE MAIN DATES
 const examDates=[
-"2027-01-20",
-"2027-01-21",
-"2027-01-22",
-"2027-01-23",
-"2027-01-24",
-"2027-01-28",
-"2027-04-02",
-"2027-04-03",
-"2027-04-04",
-"2027-04-05",
-"2027-04-06",
-"2027-04-07"
+"2027-01-20","2027-01-21","2027-01-22",
+"2027-01-23","2027-01-24","2027-01-28",
+"2027-04-02","2027-04-03","2027-04-04",
+"2027-04-05","2027-04-06","2027-04-07"
 ];
 
-// JEE COUNTDOWN
 function updateJEE(){
-
 const now=new Date();
-
-const next=examDates
-.map(d=>new Date(d+"T09:00:00"))
-.find(d=>d>now);
-
+const next=examDates.map(d=>new Date(d+"T09:00:00")).find(d=>d>now);
 const box=document.getElementById("jeeCount");
 const message=document.getElementById("jeeMessage");
 
@@ -388,31 +270,22 @@ return;
 }
 
 const diff=next-now;
-
 const days=Math.floor(diff/86400000);
 const hours=Math.floor(diff%86400000/3600000);
 const mins=Math.floor(diff%3600000/60000);
 const secs=Math.floor(diff%60000/1000);
 
-box.textContent=
-`${days} Days ${hours} Hours ${mins} Min ${secs} Sec`;
-
-message.textContent=
-"Next scheduled exam: "+
+box.textContent=`${days} Days ${hours} Hours ${mins} Min ${secs} Sec`;
+message.textContent="Next scheduled exam: "+
 next.toLocaleDateString("en-IN",{
-day:"numeric",
-month:"long",
-year:"numeric"
+day:"numeric",month:"long",year:"numeric"
 });
-
 }
 
-// AUTOMATIC BIRTHDAY WISH
+// BIRTHDAY COUNTDOWN
 function updateBirthday(){
-
 const now=new Date();
 let year=now.getFullYear();
-
 let birthday=new Date(year,3,25);
 
 const count=document.getElementById("birthdayCount");
@@ -421,11 +294,8 @@ const message=document.getElementById("birthdayMessage");
 const animation=document.getElementById("birthdayAnimation");
 
 if(now.getMonth()===3 && now.getDate()===25){
-
 count.innerHTML="🎉 TODAY IS THE DAY! 🎉";
-
 wish.innerHTML="🎂 Happy Birthday Rohit Gorai! 🎂";
-
 message.innerHTML=
 "<p>🥳 Wishing you a wonderful birthday!</p>"+
 "<p>May your day be filled with happiness, success and beautiful memories.</p>"+
@@ -435,71 +305,47 @@ if(animation.innerHTML===""){
 animation.innerHTML="🎈 🎉 🎁 🎊 🥳 🎂";
 startCelebration();
 }
-
 return;
 }
 
-if(now>birthday){
-birthday=new Date(year+1,3,25);
-}
+if(now>birthday)birthday=new Date(year+1,3,25);
 
 const days=Math.ceil((birthday-now)/86400000);
-
 count.innerHTML=days+" Days Left 🎂";
-
 wish.innerHTML="Get Ready for Your Birthday! 🎉";
-
-message.innerHTML=
-"<p>Your special day is coming soon!</p>";
-
+message.innerHTML="<p>Your special day is coming soon!</p>";
 }
 
-// BIRTHDAY CELEBRATION
+// BIRTHDAY ANIMATION
 let celebrationStarted=false;
 
 function startCelebration(){
-
 if(celebrationStarted)return;
-
 celebrationStarted=true;
 
 const symbols=["🎉","🎊","🎈","✨","🎂"];
 
 setInterval(()=>{
-
 const item=document.createElement("div");
-
 item.className="confetti";
-item.textContent=symbols[
-Math.floor(Math.random()*symbols.length)
-];
-
+item.textContent=symbols[Math.floor(Math.random()*symbols.length)];
 item.style.left=Math.random()*100+"vw";
 item.style.fontSize=(18+Math.random()*18)+"px";
 item.style.animationDuration=(3+Math.random()*3)+"s";
-
 document.body.appendChild(item);
-
 setTimeout(()=>item.remove(),6000);
-
 },350);
-
 }
 
-// DOWNLOAD CALENDAR REMINDER
+// DOWNLOAD CALENDAR
 function downloadReminder(){
-
 let events="";
 
 examDates.forEach(date=>{
-
 const [y,m,d]=date.split("-").map(Number);
-
 const start=new Date(Date.UTC(y,m-1,d));
 const end=new Date(Date.UTC(y,m-1,d+1));
-
-const format=x=>
-x.toISOString().slice(0,10).replace(/-/g,"");
+const format=x=>x.toISOString().slice(0,10).replace(/-/g,"");
 
 events+=`BEGIN:VEVENT
 UID:jee-${date}@rohitgorai
@@ -515,7 +361,6 @@ DESCRIPTION:JEE Main exam tomorrow
 END:VALARM
 END:VEVENT
 `;
-
 });
 
 const calendar=`BEGIN:VCALENDAR
@@ -525,33 +370,24 @@ CALSCALE:GREGORIAN
 ${events}
 END:VCALENDAR`;
 
-const blob=new Blob([calendar],{
-type:"text/calendar;charset=utf-8"
-});
-
+const blob=new Blob([calendar],{type:"text/calendar;charset=utf-8"});
 const url=URL.createObjectURL(blob);
 const a=document.createElement("a");
-
 a.href=url;
 a.download="Rohit-Gorai-JEE-Reminder.ics";
-
 document.body.appendChild(a);
 a.click();
 a.remove();
-
 URL.revokeObjectURL(url);
-
 }
 
 // START
 updateJEE();
 updateBirthday();
-
 setInterval(updateJEE,1000);
 setInterval(updateBirthday,60000);
 
 </script>
-
 </body>
-  </html>
-  
+                                            </html>
+ 
