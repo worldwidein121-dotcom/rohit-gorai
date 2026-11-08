@@ -4,151 +4,207 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Apps Website</title>
+<meta name="theme-color" content="#102b65">
+<title>Rohit Gorai | Personal Website</title>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+  background: #eef3ff;
+  color: #172554;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg,#141e30,#243b55);
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg,#102b65,#3285ee);
   color: white;
   text-align: center;
+  padding: 40px 15px;
 }
-h1 { padding-top: 30px; }
-.container {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 15px;
-  padding: 20px;
-  max-width: 500px;
-  margin: auto;
+
+header h1 {
+  font-size: 32px;
+  margin: 10px;
 }
-.app {
-  background: white;
-  color: #222;
-  text-decoration: none;
-  border-radius: 15px;
-  padding: 25px 10px;
-  font-size: 19px;
-  font-weight: bold;
-  box-shadow: 0 4px 12px #0005;
+
+header p {
+  margin: 9px;
 }
-.app:active { transform: scale(.95); }
-.whatsapp {
-  display: block;
-  max-width: 400px;
-  margin: 10px auto;
-  background: #25D366;
+
+/* NAVIGATION */
+nav {
+  background: #102b65;
+  padding: 14px 8px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+nav a {
   color: white;
-  padding: 17px;
-  border-radius: 15px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 14px;
 }
-footer { padding: 25px; }
+
+/* MAIN CONTAINER */
+.container {
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
+  padding: 15px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 22px;
+  margin: 17px 0;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px #0001;
+}
+
+h2 {
+  color: #1760b5;
+}
+
+.count {
+  font-size: 23px;
+  font-weight: bold;
+  color: #1760b5;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  background: #1760b5;
+  color: white;
+  padding: 12px 17px;
+  border: 0;
+  border-radius: 9px;
+  text-decoration: none;
+  margin: 6px 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #103d82;
+}
+
+/* APP BUTTONS */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 13px;
+  margin-top: 20px;
+}
+
+.app-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65px;
+  background: #1760b5;
+  color: white;
+  text-decoration: none;
+  padding: 14px 7px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px #0002;
+}
+
+.app-btn:active {
+  transform: scale(.96);
+}
+
+.whatsapp-app {
+  background: #25D366;
+}
+
+/* INPUT */
+input {
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* EXAM */
+.exam {
+  background: #eef4ff;
+  padding: 13px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.small {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* FOOTER */
+footer {
+  background: #102b65;
+  color: white;
+  text-align: center;
+  padding: 22px;
+}
+
+/* MOBILE */
+@media(max-width:480px) {
+  header h1 {
+    font-size: 27px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .app-btn {
+    font-size: 14px;
+  }
+
+  .count {
+    font-size: 19px;
+  }
+}
 </style>
 </head>
 
 <body>
 
-<h1>🌐 My Apps</h1>
-<p>All Apps In One Place</p>
-
-<div class="container">
-
-<a class="app" href="https://www.google.com">🔍<br>Google</a>
-
-<a class="app" href="https://www.youtube.com">▶️<br>YouTube</a>
-
-<a class="app" href="https://chatgpt.com">🤖<br>ChatGPT</a>
-
-<a class="app" href="https://gemini.google.com">✨<br>Gemini</a>
-
-<a class="app" href="https://www.facebook.com">📘<br>Facebook</a>
-
-<a class="app" href="https://www.instagram.com">📸<br>Instagram</a>
-
-</div>
-
-<a class="whatsapp"
-href="https://wa.me/916294181539"
-target="_blank">
-💬 WhatsApp Chat
-</a>
-
-<footer>
-<p>© 2026 My Apps Website</p>
-</footer>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rohit Gorai | Personal Website</title>
-<style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
- margin:0;background:#eef3ff;color:#172554;
- font-family:Arial,sans-serif;
-}
-header{
- background:linear-gradient(135deg,#102b65,#3285ee);
- color:white;text-align:center;padding:45px 15px;
-}
-header h1{font-size:34px;margin:10px}
-header p{margin:8px}
-nav{
- background:#102b65;padding:15px;
- display:flex;justify-content:center;flex-wrap:wrap;gap:15px;
-}
-nav a{color:white;text-decoration:none;font-weight:bold}
-.container{max-width:750px;margin:auto;padding:15px}
-.card{
- background:white;padding:22px;margin:17px 0;
- border-radius:16px;box-shadow:0 4px 15px #0001;
-}
-h2{color:#1760b5}
-.count{
- font-size:25px;font-weight:bold;color:#1760b5;
- text-align:center;margin:20px 0;
-}
-.btn{
- display:inline-block;background:#1760b5;color:white;
- padding:12px 17px;border:0;border-radius:9px;
- text-decoration:none;margin:6px 3px;cursor:pointer;
-}
-.btn:hover{background:#103d82}
-input{
- padding:12px;border:1px solid #aaa;
- border-radius:8px;width:100%;margin:10px 0;
-}
-.exam{
- background:#eef4ff;padding:13px;
- border-radius:10px;margin:10px 0;
-}
-footer{
- background:#102b65;color:white;
- text-align:center;padding:22px;
-}
-.small{font-size:13px;color:#64748b}
-</style>
-</head>
-
-<body>
-
+<!-- HEADER -->
 <header>
 <h1>Rohit Gorai</h1>
 <p>Welcome to My Personal Website</p>
 <p>🎓 Student | JEE Main Aspirant</p>
 </header>
 
+<!-- NAVIGATION -->
 <nav>
 <a href="#about">About</a>
+<a href="#apps">Apps</a>
 <a href="#jee">JEE Main</a>
 <a href="#birthday">Birthday</a>
 <a href="#contact">Contact</a>
@@ -158,22 +214,86 @@ footer{
 
 <!-- ABOUT -->
 <section class="card" id="about">
+
 <h2>👨‍🎓 About Student</h2>
+
 <h3>Rohit Gorai</h3>
+
 <p>
 Hello! My name is Rohit Gorai.
 I am a student and JEE Main aspirant.
 Welcome to my personal website.
 My goal is to learn, grow and achieve success.
 </p>
+
+</section>
+
+<!-- MY APPS -->
+<section class="card" id="apps">
+
+<h2>🌐 My Favourite Apps</h2>
+
+<p>Click any app to open</p>
+
+<div class="app-grid">
+
+<a class="app-btn"
+href="https://www.google.com"
+target="_blank" rel="noopener noreferrer">
+🔍 Google
+</a>
+
+<a class="app-btn"
+href="https://www.youtube.com"
+target="_blank" rel="noopener noreferrer">
+▶️ YouTube
+</a>
+
+<a class="app-btn"
+href="https://chatgpt.com"
+target="_blank" rel="noopener noreferrer">
+🤖 ChatGPT
+</a>
+
+<a class="app-btn"
+href="https://gemini.google.com"
+target="_blank" rel="noopener noreferrer">
+✨ Gemini
+</a>
+
+<a class="app-btn"
+href="https://www.facebook.com"
+target="_blank" rel="noopener noreferrer">
+📘 Facebook
+</a>
+
+<a class="app-btn"
+href="https://www.instagram.com"
+target="_blank" rel="noopener noreferrer">
+📸 Instagram
+</a>
+
+<a class="app-btn whatsapp-app"
+href="https://wa.me/916294181539"
+target="_blank" rel="noopener noreferrer">
+💬 WhatsApp
+</a>
+
+</div>
+
 </section>
 
 <!-- JEE MAIN -->
 <section class="card" id="jee">
+
 <h2>📅 JEE Main 2027</h2>
+
 <p>JEE Main Exam Countdown</p>
 
-<div class="count" id="jeeCount">Loading...</div>
+<div class="count" id="jeeCount">
+Loading...
+</div>
+
 <p id="jeeMessage" style="text-align:center"></p>
 
 <div class="exam">
@@ -197,48 +317,79 @@ href="https://nta.ac.in/"
 target="_blank" rel="noopener noreferrer">
 NTA Main Website
 </a>
+
+<p class="small">
+Please verify examination dates with official NTA notices.
+</p>
+
 </section>
 
-<!-- REMINDER -->
+<!-- EXAM REMINDER -->
 <section class="card">
+
 <h2>🔔 JEE Exam Reminder</h2>
+
 <p>Download the exam dates for your phone calendar.</p>
+
 <button class="btn" onclick="downloadReminder()">
 📥 Download All Exam Reminders
 </button>
+
 <p class="small">
-After downloading, import the calendar file into your
-phone's calendar app and allow notifications.
+Import the downloaded calendar file into your phone calendar.
+Reminder notifications depend on your calendar app settings.
 </p>
+
 </section>
 
 <!-- BIRTHDAY -->
 <section class="card" id="birthday">
-<h2>🎂 Birthday Countdown</h2>
-<h3 style="text-align:center">Rohit Gorai</h3>
-<p style="text-align:center">Birthday: 25 April 2008</p>
 
-<div class="count" id="birthdayCount"></div>
-<h3 id="birthdayWish" style="text-align:center;color:#1760b5"></h3>
+<h2>🎂 Birthday Countdown</h2>
+
+<h3 style="text-align:center">
+Rohit Gorai
+</h3>
+
+<p style="text-align:center">
+Birthday: 25 April
+</p>
+
+<div class="count" id="birthdayCount">
+Loading...
+</div>
+
+<h3 id="birthdayWish"
+style="text-align:center;color:#1760b5">
+</h3>
+
 </section>
 
 <!-- CONTACT -->
 <section class="card" id="contact">
+
 <h2>📞 Contact Rohit</h2>
 
 <h3>📧 Email</h3>
+
 <p>rohitgorai6294@gmail.com</p>
-<a class="btn" href="mailto:rohitgorai6294@gmail.com">
+
+<a class="btn"
+href="mailto:rohitgorai6294@gmail.com">
 Email 1
 </a>
 
 <p>rohitgorai889@gmail.com</p>
-<a class="btn" href="mailto:rohitgorai889@gmail.com">
+
+<a class="btn"
+href="mailto:rohitgorai889@gmail.com">
 Email 2
 </a>
 
 <h3>💬 WhatsApp</h3>
+
 <p>6294181539</p>
+
 <a class="btn"
 href="https://wa.me/916294181539"
 target="_blank" rel="noopener noreferrer">
@@ -246,106 +397,147 @@ Chat on WhatsApp
 </a>
 
 <h3>✈️ Telegram</h3>
+
 <a class="btn"
 href="https://t.me/ROHIT_TELEGRAM_USERNAME"
 target="_blank" rel="noopener noreferrer">
 Open Telegram
 </a>
+
 <p class="small">
-Replace ROHIT_TELEGRAM_USERNAME with Rohit's actual Telegram username.
+Replace ROHIT_TELEGRAM_USERNAME with the actual Telegram username.
 </p>
+
 </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer>
+
 <h3>Rohit Gorai</h3>
+
 <p>My Personal Website</p>
+
 <p>© 2026 Rohit Gorai</p>
+
 </footer>
 
 <script>
 
-// JEE Main 2027 exam dates
+// JEE MAIN 2027 EXAM DATES
 const examDates = [
- "2027-01-20","2027-01-21","2027-01-22",
- "2027-01-23","2027-01-24","2027-01-28",
- "2027-04-02","2027-04-03","2027-04-04",
- "2027-04-05","2027-04-06","2027-04-07"
+"2027-01-20",
+"2027-01-21",
+"2027-01-22",
+"2027-01-23",
+"2027-01-24",
+"2027-01-28",
+"2027-04-02",
+"2027-04-03",
+"2027-04-04",
+"2027-04-05",
+"2027-04-06",
+"2027-04-07"
 ];
 
-function updateJEE(){
- const now = new Date();
- const next = examDates
-  .map(d=>new Date(d+"T09:00:00"))
-  .find(d=>d>now);
+// JEE COUNTDOWN
+function updateJEE() {
 
- const box=document.getElementById("jeeCount");
- const message=document.getElementById("jeeMessage");
+const now = new Date();
 
- if(!next){
-  box.textContent="All scheduled dates passed";
-  message.textContent="Check NTA for new updates.";
-  return;
- }
+const next = examDates
+.map(d => new Date(d+"T09:00:00"))
+.find(d => d > now);
 
- const diff=next-now;
- const days=Math.floor(diff/86400000);
- const hours=Math.floor(diff%86400000/3600000);
- const mins=Math.floor(diff%3600000/60000);
- const secs=Math.floor(diff%60000/1000);
+const box = document.getElementById("jeeCount");
+const message = document.getElementById("jeeMessage");
 
- box.textContent=
- `${days} Days ${hours} Hours ${mins} Min ${secs} Sec`;
-
- message.textContent="Next scheduled exam: "+
- next.toLocaleDateString("en-IN",{
-  day:"numeric",month:"long",year:"numeric"
- });
+if(!next) {
+box.textContent = "All scheduled dates passed";
+message.textContent = "Check official NTA for updates.";
+return;
 }
 
-// Birthday countdown
-function updateBirthday(){
- const now=new Date();
- let year=now.getFullYear();
- let birthday=new Date(year,3,25);
+const diff = next - now;
 
- if(now.toDateString()===birthday.toDateString()){
-  document.getElementById("birthdayCount").textContent="🎉 TODAY!";
-  document.getElementById("birthdayWish").textContent=
-  "🎂 Happy Birthday Rohit Gorai! 🎉";
-  return;
- }
+const days = Math.floor(diff/86400000);
+const hours = Math.floor(diff%86400000/3600000);
+const mins = Math.floor(diff%3600000/60000);
+const secs = Math.floor(diff%60000/1000);
 
- if(now>birthday)birthday=new Date(year+1,3,25);
+box.textContent =
+`${days} Days ${hours} Hours ${mins} Min ${secs} Sec`;
 
- const days=Math.ceil((birthday-now)/86400000);
+message.textContent =
+"Next scheduled exam: " +
+next.toLocaleDateString("en-IN",{
+day:"numeric",
+month:"long",
+year:"numeric"
+});
 
- document.getElementById("birthdayCount").textContent=
- days+" Days Left";
-
- document.getElementById("birthdayWish").textContent=
- "Get Ready for Your Birthday!";
 }
 
-// Download calendar reminder
-function downloadReminder(){
- let events="";
+// BIRTHDAY COUNTDOWN
+function updateBirthday() {
 
- examDates.forEach(date=>{
-  const [y,m,d]=date.split("-").map(Number);
-  const start=new Date(Date.UTC(y,m-1,d));
-  const end=new Date(Date.UTC(y,m-1,d+1));
+const now = new Date();
 
-  const format=x=>x.toISOString().slice(0,10).replace(/-/g,"");
+let year = now.getFullYear();
 
-  events+=`BEGIN:VEVENT
+let birthday = new Date(year,3,25);
+
+const count = document.getElementById("birthdayCount");
+const wish = document.getElementById("birthdayWish");
+
+if(now.toDateString() === birthday.toDateString()) {
+
+count.textContent = "🎉 TODAY!";
+
+wish.textContent =
+"🎂 Happy Birthday Rohit Gorai! 🎉";
+
+return;
+}
+
+if(now > birthday) {
+birthday = new Date(year+1,3,25);
+}
+
+const days = Math.ceil(
+(birthday-now)/86400000
+);
+
+count.textContent = days+" Days Left";
+
+wish.textContent = "Get Ready for Your Birthday!";
+
+}
+
+// DOWNLOAD CALENDAR REMINDER
+function downloadReminder() {
+
+let events = "";
+
+examDates.forEach(date => {
+
+const [y,m,d] = date.split("-").map(Number);
+
+const start = new Date(Date.UTC(y,m-1,d));
+
+const end = new Date(Date.UTC(y,m-1,d+1));
+
+const format = x =>
+x.toISOString().slice(0,10).replace(/-/g,"");
+
+events += `BEGIN:VEVENT
 UID:jee-${date}@rohitgorai
 DTSTAMP:20261108T000000Z
 DTSTART;VALUE=DATE:${format(start)}
 DTEND;VALUE=DATE:${format(end)}
 SUMMARY:JEE Main 2027 Exam
-DESCRIPTION:Check official NTA notice and admit card for your shift.
+DESCRIPTION:Check official NTA notice and admit card.
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -353,32 +545,44 @@ DESCRIPTION:JEE Main exam tomorrow
 END:VALARM
 END:VEVENT
 `;
- });
 
- const calendar=`BEGIN:VCALENDAR
+});
+
+const calendar = `BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Rohit Gorai//JEE Calendar//EN
 CALSCALE:GREGORIAN
-${events}END:VCALENDAR`;
+${events}
+END:VCALENDAR`;
 
- const blob=new Blob([calendar],{
-  type:"text/calendar;charset=utf-8"
- });
+const blob = new Blob([calendar],{
+type:"text/calendar;charset=utf-8"
+});
 
- const url=URL.createObjectURL(blob);
- const a=document.createElement("a");
- a.href=url;
- a.download="Rohit-Gorai-JEE-Reminder.ics";
- a.click();
- URL.revokeObjectURL(url);
+const url = URL.createObjectURL(blob);
+
+const a = document.createElement("a");
+
+a.href = url;
+a.download = "Rohit-Gorai-JEE-Reminder.ics";
+
+document.body.appendChild(a);
+a.click();
+a.remove();
+
+URL.revokeObjectURL(url);
+
 }
 
+// START
 updateJEE();
 updateBirthday();
+
 setInterval(updateJEE,1000);
 setInterval(updateBirthday,60000);
 
 </script>
+
 </body>
   </html>
-                         
+  
